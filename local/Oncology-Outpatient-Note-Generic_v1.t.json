@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "a7cfbcd5dc81266eda2e8ec70e0a1e9e",
+      "MD5-CAM-1.0.1" : "df342029d4a32df6dd53bc270a44ada2",
       "original_language" : "ISO_639-1::nb",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
@@ -8524,7 +8524,7 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
             "text" : "Bivirkningsregistrering",
-            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+            "description" : "Registrering av bivirkninger og komplikasjoner som følge av behandlingen som er gitt. "
           }
         },
         "pt-br" : {
@@ -8789,9 +8789,9 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
-                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
                       "constraint" : [ "Ingen relevante bivirkninger" ]
                     } ]
                   } ],
@@ -8892,6 +8892,13 @@
             "code" : "at0000.1",
             "text" : "Bivirkning-Ekslusjon",
             "description" : "Et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Eksklusjonsutsagn",
+            "description" : "Standard verdi er ingen relevante bivirkninger",
+            "comment" : "Utsagnet er ment for å brukes sammen med dataelementet \"Ekskludert konsept\". For eksempel: Dataelementet legger til rette for registrering av utsagn som: \"Ingen tidligere...\" hvor \"Ekskludert konsept\" navngir det spesifikke problemet, diagnosen, substansen, prosedyren eller legemiddelet. Dersom elementet \"Ekskludert konsept\" brukes for å registrere et prekoordinert uttrykk som f.eks. \"Ingen kjent diabetes i familien\" er dette elementet overflødig."
           },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -9742,7 +9749,15 @@
         "en" : { },
         "de" : { },
         "sv" : { },
-        "nb" : { }
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Common Terminology Criteria for Adverse Events (CTCAE)",
+            "description" : "Et rammeverk for å registrere CTCAE klassifikasjon av en uønsket hendelse, symptom eller sykdomtilstand.",
+            "comment" : "Tidligere kjent som Common Toxicity Criteria (CTC).\n\nKodeverkene som benyttes i registreringen legges inn i kjøretid (runtime) via script "
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
