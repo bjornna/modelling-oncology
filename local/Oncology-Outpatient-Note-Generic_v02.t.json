@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "f08f3f4ee30eb118aa77da3e63a010e7",
+      "MD5-CAM-1.0.1" : "5a102bada09e3dfa392dfa23b733b6f5",
       "original_language" : "ISO_639-1::nb",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
@@ -14831,6 +14831,13 @@
           }
         },
         "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kartlegging av tumorhendelser",
+            "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge bekymringer, plager, problemer eller diagnoser.",
+            "comment" : "Svarene kan være selvrapporterte."
+          },
           "at0028.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
