@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "b48533175dc32e324b32746e03e4b0c8",
+      "MD5-CAM-1.0.1" : "9d69b5b273115e7fd2726bfe94972190",
       "original_language" : "ISO_639-1::nb",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
@@ -11492,6 +11492,10 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Tumorhendelse",
+                    "@type" : "DV_TEXT"
+                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
@@ -11519,7 +11523,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.4" ],
+                      "constraint" : [ "ac0.6" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -11552,10 +11556,10 @@
             "text" : "Problem/diagnosis",
             "description" : "The problem or diagnosis to which the 'Exclusion statement' applies. For example: 'Diabetes', 'COPD' or 'Asthma'."
           },
-          "ac0.4" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.4",
+            "code" : "ac0.6",
             "description" : ""
           }
         },
@@ -11572,10 +11576,10 @@
             "text" : "Problem/diagnose",
             "description" : "Problemet eller diagnoses som \"Eksklusjonsutsagn\" omhandler. For eksempel: \"Diabetes\", \"KOLS\" eller \"Astma\"."
           },
-          "ac0.4" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.6",
             "description" : ""
           }
         }
@@ -11601,6 +11605,16 @@
         "ac0.4" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
+          "members" : [ "at0004" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0004" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
           "members" : [ "at0004" ]
         }
       }
