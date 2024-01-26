@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "a05a38d5b43ad2f9247056aa81c46859",
+      "MD5-CAM-1.0.1" : "c10a80cd8ca211700e061ad5e54216d5",
       "original_language" : "ISO_639-1::nb",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
@@ -11159,14 +11159,25 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "existence" : "0..1",
+                    "rmAttributeName" : "defining_code",
                     "children" : [ {
-                      "@type" : "C_STRING",
-                      "constraint" : [ "Ingen tumorhendelser" ]
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "SNOMED-CT"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "308489006",
+                        "value" : "Tumorhendelse (patologisk prosess)"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -11514,14 +11525,25 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "existence" : "0..1",
+                    "rmAttributeName" : "defining_code",
                     "children" : [ {
-                      "@type" : "C_STRING",
-                      "constraint" : [ "Tumorhendelse" ]
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "SNOMED-CT"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "308489006",
+                        "value" : "Tumorhendelse (patologisk prosess)"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -11534,6 +11556,21 @@
               "occurrences" : "0..0",
               "nodeId" : "at0012.1",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0077.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -11581,6 +11618,22 @@
               "occurrences" : "0..0",
               "nodeId" : "at0072.1",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -11650,7 +11703,21 @@
         "en" : { },
         "ar-sy" : { },
         "pt-br" : { },
-        "nb" : { },
+        "nb" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Problem/diagnosenavn",
+            "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
+            "comment" : "Benyttes her som skjult felt for sluttbruker og definerer hva slags problem det er. \n\nHer er valgt SNOMED-CT kode for patologisk prosess. Da denne har barn som ser ut til å dekke behovet for ulike tumorhendelser. \n\nSe: https://browser.ihtsdotools.org/?perspective=full&conceptId1=308489006&edition=MAIN/SNOMEDCT-NO&release=&languages=no,en "
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Dato/ tid for debut",
+            "description" : "Antatt eller faktisk dato/tid da tegn eller symptomer på problemet eller diagnosen først ble observert."
+          }
+        },
         "sv" : { },
         "ko" : { },
         "fi" : { },
@@ -11852,7 +11919,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2F7F1DDC2548C43FE41D571E04BE548C"
+        "PARENT:MD5-CAM-1.0.1" : "c0f18eb080d64aae6b6c0f24f62c612e"
       },
       "details" : {
         "nb" : {
@@ -13346,8 +13413,9 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Neste planlagte og sammendrag",
-            "description" : "I denne delen registreres planlagte tiltak og sammendrag av undersøkelsen. "
+            "text" : "Neste planlagte kontakt og sammendrag",
+            "description" : "I denne delen registreres planlagte tiltak og sammendrag av undersøkelsen. ",
+            "comment" : "Section arketypen har ingen semantisk betydning - og brukes her bare for å gruppere i template. "
           }
         },
         "pt-br" : {
@@ -13593,7 +13661,8 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ACTIVITY",
-          "nodeId" : "at0001",
+          "occurrences" : "1..1",
+          "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "description",
