@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "0d07c5bad849c77f1ac0c0fee9fbbcb2",
+      "MD5-CAM-1.0.1" : "22ded543c2efc0fcb35d69946d92c26c",
       "original_language" : "ISO_639-1::nb",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
@@ -2867,6 +2867,13 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "code_string" : "at0007",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "@type" : "DV_CODED_TEXT"
+                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
@@ -2877,7 +2884,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.59" ],
+                      "constraint" : [ "ac0.61" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -2904,66 +2911,66 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "pt-br" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "es-ar" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "fa" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "en" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "ar-sy" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "zh-cn" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "el" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -2975,34 +2982,34 @@
             "description" : "Metode for registrering av kroppsmasseindeks.",
             "comment" : "S"
           },
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "fi" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.59" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.59",
+            "code" : "ac0.61",
             "description" : ""
           }
         }
@@ -3304,6 +3311,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.59",
           "members" : [ "at0007", "at0008" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0007" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0007" ]
         }
       }
     },
@@ -10969,7 +10986,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Tumor event",
+            "text" : "Tumorhendelse",
             "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
           }
         },
@@ -11319,7 +11336,14 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { }
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Eksklusjon av tumorhendelse",
+            "description" : "Et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11788,6 +11812,13 @@
             "code" : "at0077.1",
             "text" : "Dato/ tid for debut",
             "description" : "Antatt eller faktisk dato/tid da tegn eller symptomer på problemet eller diagnosen først ble observert."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tumorhendelse",
+            "description" : "Detaljer om én identifisert helsetilstand, skade, funksjonshemming eller annet forhold som påvirker et individs fysiske, mentale og/eller sosiale velvære.",
+            "comment" : "Det er i praksis ikke lett å oppnå et klart skille mellom et problem og en diagnose. I klinisk dokumentasjon med denne arketypen ses problem og diagnose som et kontinuum, med økende krav til detaljer og støttende evidens for å underbygge en diagnose."
           }
         },
         "sv" : { },
