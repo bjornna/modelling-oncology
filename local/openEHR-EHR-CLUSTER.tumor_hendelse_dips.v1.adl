@@ -9,9 +9,13 @@ language
 
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Morten Hørthe">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"mho@dips.no">
+		["date"] = <"2024-01-01">
 	>
 	lifecycle_state = <"0">
+	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -19,12 +23,12 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"2F7F1DDC2548C43FE41D571E04BE548C">
+		["MD5-CAM-1.0.1"] = <"a99750bb0e5b549d601d036532eba6cc">
 		["build_uid"] = <"ec45d768-4807-3348-a83a-a601ffca4ccf">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Tumor hendelse dips
+	CLUSTER[at0000] matches {    -- Tumor hendelse
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Hendelsestype
 				value matches {
@@ -64,8 +68,8 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Tumor hendelse dips">
-					description = <"unknown">
+					text = <"Tumor hendelse">
+					description = <"Brukes for å beskrive detaljer om en tumorhendelse. Tumorhendelse er funn eller observasjoner av sykdomsutvikling relatert til kreftsykdommen. ">
 				>
 				["at0001"] = <
 					text = <"Hendelsestype">
