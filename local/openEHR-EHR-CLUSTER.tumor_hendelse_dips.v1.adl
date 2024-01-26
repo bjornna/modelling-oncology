@@ -23,12 +23,12 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"a99750bb0e5b549d601d036532eba6cc">
+		["MD5-CAM-1.0.1"] = <"c0f18eb080d64aae6b6c0f24f62c612e">
 		["build_uid"] = <"ec45d768-4807-3348-a83a-a601ffca4ccf">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Tumor hendelse
+	CLUSTER[at0000] matches {    -- Tumorhendelse
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Hendelsestype
 				value matches {
@@ -68,7 +68,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Tumor hendelse">
+					text = <"Tumorhendelse">
 					description = <"Brukes for å beskrive detaljer om en tumorhendelse. Tumorhendelse er funn eller observasjoner av sykdomsutvikling relatert til kreftsykdommen. ">
 				>
 				["at0001"] = <
