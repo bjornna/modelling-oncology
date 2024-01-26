@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "75f75489620d9193ffdc8f81945d3339",
+      "MD5-CAM-1.0.1" : "0eda13871d3d601a661ddf473db15fd8",
       "original_language" : "ISO_639-1::nb",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
@@ -9850,6 +9850,28 @@
               "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.30" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -9872,28 +9894,6 @@
                         "code" : "116224001",
                         "value" : "Complication of procedure"
                       } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.30" ],
-                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -11497,27 +11497,6 @@
               "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "defaultValue" : {
-                    "value" : "Tumorhendelse",
-                    "@type" : "DV_TEXT"
-                  },
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Tumorhendelse", "/.+/" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "name",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -11534,6 +11513,27 @@
                       },
                       "constraint" : [ "ac0.6" ],
                       "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Tumorhendelse",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Tumorhendelse", "/.+/" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -12290,7 +12290,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "c0f18eb080d64aae6b6c0f24f62c612e"
+        "PARENT:MD5-CAM-1.0.1" : "8cfdd7a3ed97c8116d098843016dfe55"
       },
       "details" : {
         "nb" : {
@@ -12385,7 +12385,7 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Nærmere beskrivelse av metode for påvisning",
+            "text" : "Beskrivelse av metode for påvisning",
             "description" : ""
           }
         }
@@ -13025,7 +13025,21 @@
         "en" : { },
         "sl" : { },
         "pt-br" : { },
-        "nb" : { },
+        "nb" : {
+          "at0107.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0107.1",
+            "text" : "Residiv eller progresjon",
+            "description" : "Det er svært viktig å oppdage eventuelle avvik fra postulerte residivrater og -mønstre så tidlig som mulig, for å kunne justere behandlings- og/eller oppfølgingsprogrammet, hvis det er indikert.",
+            "comment" : "For eksempel: ufullstendig eller feilslått behandling."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Residiv/progresjon",
+            "description" : "Kontekst- eller tidsspesifikk kvalifikator for et problem eller en diagnose."
+          }
+        },
         "ko" : { },
         "de" : { },
         "it" : { },
