@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2024-01-01">
 		["name"] = <"Morten Hørthe">
 		["organisation"] = <"DIPS AS">
 		["email"] = <"mho@dips.no">
-		["date"] = <"2024-01-01">
 	>
 	lifecycle_state = <"0">
 	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
@@ -23,7 +23,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"c0f18eb080d64aae6b6c0f24f62c612e">
+		["MD5-CAM-1.0.1"] = <"8cfdd7a3ed97c8116d098843016dfe55">
 		["build_uid"] = <"ec45d768-4807-3348-a83a-a601ffca4ccf">
 	>
 
@@ -40,7 +40,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Fritekst for beskrivelse av metode detaljer
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Beskrivelse av metode for påvisning
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -80,12 +80,13 @@ ontology
 					description = <"Metode brukt for å påvise hendelsen">
 				>
 				["at0005"] = <
-					text = <"Fritekst for beskrivelse av metode detaljer">
-					description = <"*">
+					text = <"Beskrivelse av metode for påvisning">
+					description = <"">
 				>
 				["at0006"] = <
 					text = <"Spesifisert hendelsestype">
-					description = <"*">
+					description = <"Felt for å definere koder for spesifikke hendelsestyper. ">
+					comment = <"Kodeverk legges til i templaten. ">
 				>
 				["at0008"] = <
 					text = <"Dato for forrige kontroll">
@@ -93,7 +94,7 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Videre plan/behandling">
-					description = <"*">
+					description = <"Beskriv plan/behandling for oppfølging av komplikasjonen. ">
 				>
 			>
 		>
