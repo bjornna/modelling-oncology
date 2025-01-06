@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "019bd4e4bd7a8c5efadd326a75e91db3",
+      "MD5-CAM-1.0.1" : "7edfe83828c68de49e299bd8a5394d1e",
       "PARENT:MD5-CAM-1.0.1" : "DB7D4B698449B0D99CB352CDB935B693",
       "sem_ver" : "3.0.0",
       "build_uid" : "",
@@ -117,17 +117,19 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "0..1",
+                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
-                  "existence" : "0..1",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "0..1",
                     "terminologyId" : {
                       "value" : "no.samlivsstatus"
                     },
                     "constraint" : [ ],
+                    "selectedTerminologies" : [ "no.samlivsstatus" ],
                     "includedExternalTerminologyCodes" : [ {
                       "terminologyId" : "no.samlivsstatus",
                       "code" : "1",
