@@ -1,0 +1,238 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "0604559a-b8c7-472c-a937-17990b1ed749",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-06-16",
+      "name" : "Liv Laugen",
+      "organisation" : "Oslo universitetssykehus",
+      "email" : "liv.laugen@ous-hf.no"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "4.0.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "cd7f592c4a61c01c8f57b27ad1c4357f",
+      "PARENT:MD5-CAM-1.0.1" : "37053661135B974855AAA356073EA23A",
+      "original_language" : "ISO_639-1::nb"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "Et templat inneholdende arbeidsstatus og et standardisert verdisett basert på arbeidet gjort i regi av Direktoratet for e-helse. ",
+        "use" : "Et templat inneholdende arbeidsstatus og et standardisert verdisett basert på arbeidet gjort i regi av Direktoratet for e-helse. \nDette templatet vil bli brukt i det interregionale \"felles kreftjournal\" prosjektet under sosialanamnese.\nVidere bør dette eller tilhørende verdisett også brukes i andre prosjekter hvor det lages skjema hvor man vil dokumentere arbeidsstatus i journal.\n\nVerdisettet med tilhørende forklaring i dette templatet for arbeidsstatus er:\n- I arbeid = Alle som har jobb og identifiserer seg med at deres hovedkategori er å være i arbeid (dvs. sannsynligvis ikke studenter med deltidsarbeid). Både fulltid og deltid.\n- Ikke i arbeid = Alle som ikke har et arbeidsforhold: hjemmeværende, permitterte, arbeidssøkende, uføretrygdet, under rehabilitering, under attføring eller arbeidsmarkedskurs o.l., samt avtjener verneplikt, siviltjeneste. De med et arbeidsforhold, men som er midlertidig sykemeldt ansees for å være i arbeid.\n- Alderspensjonist = Ikke uførepensjon eller andre pensjonsformer annet enn aldersrelatert. AFP er inkludert.\n- Under utdanning/studerer = Innrullert i et studieløp og identifiserer seg som hovedsakelig student/elev. Både fulltid og deltid.\n- Ukjent = Ukjent arbeidsstatus.\n\n\n",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-EVALUATION.occupation_summary.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-EVALUATION.t_occupation_summary.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "EVALUATION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "data",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0002.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0004.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "no.arbeidsstatus"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "1",
+                      "value" : "I arbeid"
+                    }, {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "2",
+                      "value" : "Ikke i arbeid"
+                    }, {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "3",
+                      "value" : "Alderspensjonist"
+                    }, {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "4",
+                      "value" : "Under utdanning/studerer"
+                    }, {
+                      "terminologyId" : "no.arbeidsstatus",
+                      "code" : "9",
+                      "value" : "Ukjent"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : { },
+      "nb" : { },
+      "it" : { },
+      "de" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "26cca8ee-f1d7-3756-a174-7be745f286ef",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "arbeidssammendrag",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : {
+      "name" : "Natalia Strauch",
+      "organisation" : "Medizinische Hochschule Hannover",
+      "email" : "Strauch.Natalia@mh-hannover.de"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "Silje Ljosland Bakke",
+      "organisation" : "Nasjonal IKT HF"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : {
+      "name" : "Cecilia Mascia",
+      "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+      "email" : "cecilia.mascia@crs4.it"
+    },
+    "otherDetails" : { }
+  } ]
+}
