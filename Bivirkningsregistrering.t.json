@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1d399a57bbe693704002ef43e9a67d5a",
+      "MD5-CAM-1.0.1" : "598b91a132cd8a86e93976ed289a3711",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -374,6 +374,28 @@
               "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.38" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -396,28 +418,6 @@
                         "code" : "116224001",
                         "value" : "Complication of procedure"
                       } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.38" ],
-                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1537,6 +1537,13 @@
             "text" : "Common Terminology Criteria for Adverse Events (CTCAE)",
             "description" : "Et rammeverk for å registrere CTCAE klassifikasjon av en uønsket hendelse, symptom eller sykdomtilstand.",
             "comment" : "Tidligere kjent som Common Toxicity Criteria (CTC).\n\nKodeverkene som benyttes i registreringen legges inn i kjøretid (runtime) via script "
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Term",
+            "description" : "Navnet på sykdomstegnet, symptomet eller sykdommen som er observert, registrert som en MedDRA Lowest Level Term (LLT).",
+            "comment" : "MERK at dette feltet styres fullstendig av script i skjema. Koden som er lagt inn er bare et eksempel for å sikre at datatypen blir DV_CODED_TEXT. Kodelisten produseres av SCRIPT og blir mappet til den korresponderende MedDRA-koden."
           }
         }
       },
