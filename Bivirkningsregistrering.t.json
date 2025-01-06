@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "598b91a132cd8a86e93976ed289a3711",
+      "MD5-CAM-1.0.1" : "e8a13207c38236536520e5134104bbab",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29"
     },
     "details" : {
@@ -1544,6 +1544,13 @@
             "text" : "Term",
             "description" : "Navnet på sykdomstegnet, symptomet eller sykdommen som er observert, registrert som en MedDRA Lowest Level Term (LLT).",
             "comment" : "MERK at dette feltet styres fullstendig av script i skjema. Koden som er lagt inn er bare et eksempel for å sikre at datatypen blir DV_CODED_TEXT. Kodelisten produseres av SCRIPT og blir mappet til den korresponderende MedDRA-koden."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Beskrivelse av grad",
+            "description" : "Termen eller frasen som representerer alvorlighetsgraden til den uønskede hendelsen.",
+            "comment" : "MERK at dette feltet styres fullstendig av script i skjema. Det er lagt inn eksempel koder for å sikre at datatypen blir DV_CODED_TEXT på elementet. \nFeltet blir  utfylt via en eksterne kilde, som en CTCAE kunnskapsbase eller en annen kilde, under kjøring av dataprogrammet (run-time)."
           }
         }
       },
