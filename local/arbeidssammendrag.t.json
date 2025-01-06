@@ -9,7 +9,7 @@
       "organisation" : "Oslo universitetssykehus",
       "email" : "liv.laugen@ous-hf.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "bna@dips.no" ],
     "lifecycleState" : {
       "codeString" : "unmanaged"
     },
