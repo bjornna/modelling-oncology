@@ -21,7 +21,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9610cd52fb781da2f87df83df4ad8a15",
+      "MD5-CAM-1.0.1" : "22ad10b2bfcffc2cb32638216633b992",
       "PARENT:MD5-CAM-1.0.1" : "7A9C418DF698E41C35D1C915B88E22B9",
       "sem_ver" : "2.0.0",
       "build_uid" : "",
@@ -128,29 +128,31 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_CODED_TEXT",
-                        "occurrences" : "0..1",
+                        "occurrences" : "1..1",
                         "defaultValue" : {
-                          "@type" : "DV_CODED_TEXT",
-                          "value" : "Kartlegging av om individet har omsorgsansvar",
                           "defining_code" : {
-                            "@type" : "CODE_PHRASE",
                             "terminology_id" : {
-                              "@type" : "TERMINOLOGY_ID",
-                              "value" : "no.onk.sosiale_forhold"
+                              "value" : "no.onk.sosiale_forhold",
+                              "@type" : "TERMINOLOGY_ID"
                             },
-                            "code_string" : "OA"
-                          }
+                            "code_string" : "OA",
+                            "@type" : "CODE_PHRASE"
+                          },
+                          "value" : "Kartlegging av om individet har omsorgsansvar",
+                          "@type" : "DV_CODED_TEXT"
                         },
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
-                          "existence" : "0..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "0..1",
                             "terminologyId" : {
                               "value" : "no.onk.sosiale_forhold"
                             },
                             "constraint" : [ ],
+                            "selectedTerminologies" : [ "no.onk.sosiale_forhold" ],
                             "includedExternalTerminologyCodes" : [ {
                               "terminologyId" : "no.onk.sosiale_forhold",
                               "code" : "OA",
