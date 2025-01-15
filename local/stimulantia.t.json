@@ -21,9 +21,9 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "178a0722806c67b77b42b6c1328b54b9",
+      "MD5-CAM-1.0.1" : "6942866dd45d7a8b2aa81218ec1b58bd",
       "PARENT:MD5-CAM-1.0.1" : "9D358EB1048EA1401802C3E1FDFB9A29",
-      "sem_ver" : "20.0.0",
+      "sem_ver" : "21.0.0",
       "build_uid" : "",
       "original_language" : "ISO_639-1::nb"
     },
@@ -36,9 +36,9 @@
           },
           "codeString" : "nb"
         },
-        "purpose" : "Et standardisert templat for Stimulantia - alkoholbruk, røyk, røykfri tobakk og andre substanser annet enn alkohol og tobakk.\n",
-        "keywords" : [ "røyk, tobakk, rusmidler, snus, røykfri tobakk, alkohol, narkotika, hasj, opiater, CNS-stimulerende, substansbruk" ],
-        "use" : "Et standardiser templat for Stimulantia - alkoholbruk, røyk, røykfri tobakk og andre substanser annet enn alkohol og tobakk.\n\nDet er brukt arketypene: \n- Alkoholanamnese (EVALUATION.alcohol_consumption_summary)\n- Røykeanamnese (EVALUATION.tobacco_smoking_summary)\n- Røykfri tobakkanamnese (EVALUATION.smokeless_tobacco_summary.v1)\n\nFor å si noe om bruk av andre rusmidler enn tobakk/snus/alkohol kan man velge to tilnærminger (evt. begge):\n  1. Detaljerte registreringer av spesifikk substansbruk.  \n  2. Fritekstbeskrivelse av substansbruk.\n",
+        "purpose" : "For å registrere et individs bruk av alkohol, røyk, røykfri tobakk og andre substanser i forbindelse med prosjektet Strukturert Kreftjournal.\n",
+        "keywords" : [ "kreftjournal, sjk, røyk, tobakk, rusmidler, snus, røykfri tobakk, alkohol, narkotika, hasj, opiater, CNS-stimulerende, substansbruk" ],
+        "use" : "Brukes for å registrere et individs bruk av alkohol, røyk, røykfri tobakk og andre substanser i forbindelse med prosjektet Strukturert Kreftjournal.\n\nSmåtemplatet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om stimulantia.\n\nI templatet benyttes arketypene:\n- Alkoholanamnese (EVALUATION.alcohol_consumption_summary)\n- Røykeanamnese (EVALUATION.tobacco_smoking_summary)\n- Røykfri tobakkanamnese (EVALUATION.smokeless_tobacco_summary.v1)\n- Substansanamnese (EVALUATION.substance_use_summary)\n\nFor å si noe om bruk av andre rusmidler enn tobakk/snus/alkohol kan man velge to tilnærminger (evt. begge):\n1. Fritekstbeskrivelse av substansbruk. \n2. Detaljerte registreringer av spesifikk substansbruk.  \n\n",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -214,7 +214,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..1",
+        "occurrences" : "0..*",
         "nodeId" : "at0.5",
         "attributes" : [ ],
         "attributeTuples" : [ ],
