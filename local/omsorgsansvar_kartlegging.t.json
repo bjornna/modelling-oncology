@@ -21,7 +21,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "daa529b3dba144852f783df3f0ecd35c",
+      "MD5-CAM-1.0.1" : "9610cd52fb781da2f87df83df4ad8a15",
       "PARENT:MD5-CAM-1.0.1" : "7A9C418DF698E41C35D1C915B88E22B9",
       "sem_ver" : "2.0.0",
       "build_uid" : "",
@@ -36,9 +36,9 @@
           },
           "codeString" : "nb"
         },
-        "purpose" : "For å registrere om et individ har ansvar/omsorg for mindreårige barn og andre individer over 18 år.",
+        "purpose" : "For å registrere om et individ har ansvar/omsorg for mindreårige barn og andre individer over 18 år i forbindelse med prosjektet Strukturert Kreftjournal.",
         "keywords" : [ "Omsorg, verge" ],
-        "use" : "\nFor å ha en sjekkliste for å kunne registrere om et individ/en pasient har ansvar for mindreårige barn i tillegg til å ha omsorg for individer som er over 18 år. \nDet er brukt kartleggingsarketypen for sosiale forhold (openEHR-EHR-OBSERVATION.social_context_screening.v1) med to spørsmål, ett for om pasienten har ansvar for barn under 18 år og et spørsmål for om pasienten har ansvar for n ansvar for egne barn/andre over 18 år?På begge spørsmålene kan det velges enten å krysse av for ja/nei/ukjent, eller bare ha en boolean - sant/ikke sant. \n\nTemplatet er utarbeidet i forbindelse med det interregionale arbeidet med \"felles kreftjournal\"\nDet er ment å brukes i sosialanamnese sammenheng og ikke ment å erstatte den formelle PAS delen i EPJ",
+        "use" : "Brukes for å registrere kartleggingsspørsmål om et individ har ansvar/omsorg for mindreårige barn og andre individer over 18 år i forbindelse med prosjektet Strukturert Kreftjournal.\n\nDette templatet vil bli brukt i prosjektet Strukturert Kreftjournal under sosialanamnese.\n\nArketypen Kartleggingsspørsmål om sosiale forhold (openEHR-EHR-OBSERVATION.social_context_screening.v1) er benyttet med to spørsmål, ett for om pasienten har ansvar for barn under 18 år og et spørsmål for om pasienten har ansvar for egne barn/andre over 18 år. \n\nSmåtemplatet med det standardiserte verdisettet kan benyttes utenfor Strukturert kreftjournal hvor det lagres data om kartleggingsspørsmål om omsorgsansvar.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
